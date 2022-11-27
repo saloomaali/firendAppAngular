@@ -14,11 +14,12 @@ const myRoute : Routes = [
     component:AddFriendComponent
   },
   {
-    path:"/view",
+    path:"view",
     component:ViewFirendComponent
   },
   {
-    
+   path:"search",
+   component:SearchFriendComponent
   }
 ]
 
