@@ -17,6 +17,7 @@ const myRoute : Routes = [
     component:ViewFirendComponent
   },
   {
+  
     
   }
 ]
