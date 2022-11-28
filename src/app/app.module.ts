@@ -4,10 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddFriendComponent } from './add-friend/add-friend.component';
-import { ViewFirendComponent } from './view-firend/view-firend.component';
+import { ViewFirendComponent } from './view-friend/view-firend.component';
 import { RouterModule, Routes } from '@angular/router';
 import { SearchFriendComponent } from './search-friend/search-friend.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FormsModule } from '@angular/forms';
 
 const myRoute : Routes = [
   {
@@ -36,7 +37,8 @@ const myRoute : Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
