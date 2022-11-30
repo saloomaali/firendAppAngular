@@ -11,4 +11,9 @@ export class ServiceService {
   fetchFriend=()=>{
     return this.http.get("https://dummyapifriends.herokuapp.com/view")
   }
+
+  addFriend=(dataToSend:any)=>{
+
+    return this.http.post("https://dummyapifriends.herokuapp.com/adddata" , dataToSend)
+}
 }
